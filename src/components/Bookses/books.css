@@ -1,0 +1,380 @@
+.library {
+    display: flex;
+    background-color: #ffffff;   
+    animation: fadeIn 0.9s;
+}
+
+.sidebar {
+
+    width: 280px;
+    border: 1px solid rgba(94, 91, 88, 0.235);
+    padding: 12px;
+    border-radius: 10px;
+    position: absolute;
+    top: 11cm;
+    margin-left: 27cm;
+
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: x-large;
+    color: #303030;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    font-size: large;
+    text-align: left;
+    
+}
+
+.sidebar ul li {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #0000001e;
+    margin-bottom: 15px;
+    color: #696161;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+.sidebar ul li:hover{
+    transform: scale(1);
+    cursor: pointer;
+    background-color: #579de829;
+}
+.content {
+    flex: 1;
+    height: 76cm;
+    text-align: center;
+    margin-top: 9cm;
+}
+
+.books {
+ 
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+    gap: 50px;
+    align-items: center;
+    margin-left: 2.5cm;
+   
+}
+
+#popular h1 {
+    color: #565252d5;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.book {
+
+    padding: 50px;
+    border-radius: 10px;
+    width: 20cm;
+    height: 3cm;
+    transition:  0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.087);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1cm;
+    animation: fadeIn 0.9s;
+}
+.book-details-download{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60cm;
+    margin-right: -1.35cm;
+}
+#books-icon i {
+    color: #7b7977;
+    letter-spacing: 5px;
+}
+
+.book:hover {
+    transform: scale(1);
+    cursor: pointer;
+    background-color: #579de829;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    
+}
+.book-photo{
+    margin-left: -1.3cm;
+    width: 24cm;
+    height: 5.6cm;
+    background-color: #4c4c4c0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-photo img {
+   border-radius: 10px;
+   max-width:120px;
+   max-height: 300px;
+   height: auto;
+   width: auto;
+   
+}
+.books-link{
+    text-decoration: none;
+}
+
+.book h3 {
+    color: #000000a5;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.book p {
+    font-size: 15px;
+    color: #9ea9b5;
+}
+
+.download button {
+   
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.214);
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.down-button:hover {
+    background-color:#ff7a15
+}
+
+.search-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(220, 37%, 97%);
+    width: 100vw;
+    height: 9cm;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #41464ab1;
+}
+
+.title p {
+    font-size: 20px;
+    color: #9b9595;
+}
+
+.search-container div {
+    
+    text-align: center;
+    width: 30cm;
+    margin-top: 0.5cm;
+    
+}
+
+#icon i {
+    font-size: 4cm;
+    color: #ff7a15;
+}
+
+.search-container input[type="text"] {
+    width: 18cm;
+    padding: 18px;
+    /* border: 2px solid #ad8b8b; */
+    border-radius: 35px;
+    font-size: 15px;
+    border: none;
+    background-color:rgba(99, 94, 94, 0.133)
+   
+}
+
+.search-button,
+.clear-button {
+    position: absolute;
+    right: 10cm;
+    top: 6.1cm;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: large;
+}
+
+.search-button:hover,
+.clear-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pagination {
+    position: absolute;
+    margin-top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagination button {
+    background-color: #f0f0f0;
+    color: #000000;
+    border: none;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: x-large;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: rgb(228, 112, 35);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 768px) {
+    .library {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+        border: none;
+        border-bottom: 1px solid rgb(255, 132, 0);
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .content {
+        margin-top: 0;
+    }
+
+    .search-container {
+        top: 1cm;
+        height: auto;
+    }
+
+    .pagination {
+        position: absolute;
+        margin-bottom: 30cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .library {
+        padding: 10px;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+
+    .books {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .book {
+        width: 100%;
+    }
+
+    #books-icon i {
+        font-size: large;
+    }
+
+    .book h3 {
+        font-size: medium;
+    }
+
+    .book p {
+        font-size: small;
+    }
+
+    .download button {
+        padding: 10px 15px;
+        font-size: small;
+    }
+
+    .search-container {
+        padding: 10px;
+    }
+
+    #title h1 {
+        font-size: 24px;
+    }
+
+    #title p {
+        font-size: 14px;
+    }
+
+    .search-container input[type="text"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .search-button,
+    .clear-button {
+        font-size: medium;
+    }
+
+    .pagination button {
+        padding: 8px 15px;
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: none; 
+    }
+
+    .content {
+        margin-top: 0;
+    }
+
+    .search-container {
+        padding: 5px;
+    }
+
+    #title h1 {
+        font-size: 20px;
+    }
+
+    #title p {
+        font-size: 12px;
+    }
+
+    .search-container input[type="text"] {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .search-button,
+    .clear-button {
+        padding: 8px;
+        font-size: small;
+    }
+
+    .pagination button {
+        padding: 6px 12px;
+        font-size: small;
+    }
+}

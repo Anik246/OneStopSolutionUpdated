@@ -1,0 +1,154 @@
+.navbar 
+{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 1000;
+    position:fixed;
+    box-shadow: 0 0px 20px 0 rgba(29, 29, 39, 0.3);
+    width: 100vw;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: rgba(61, 63, 64, 0.741);
+}
+.nav-link:hover{
+    color:#ff9900
+}
+.navbar-menu 
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    margin-right:15cm;
+    font-weight: 450;
+    color: rgba(61, 63, 64, 0.741);
+}
+.navbar svg{
+    margin-left: 20px;
+}
+.navbar h1{
+    color: rgba(0, 0, 0, 0.777);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items:center;
+    gap: 30px;
+
+}
+
+.navbar-right .buttons {
+    display: flex;
+    background-color: #ff9900;
+    font-size: 14px;
+    color:white;
+    border: 7.0px ;
+    padding: 10px 25px;
+    border-radius: 35px;
+    cursor: pointer;
+
+
+}
+.navbar-right #bell-icon{
+    color: rgba(39, 14, 154, 0.863);
+    font-size: 25px;
+
+}
+
+.navbar .active {
+    padding-bottom: 0px;
+    border-bottom: 3px solid rgb(247, 136, 10);
+    color: #ff9900;        
+}
+
+.navbar-right button:hover {
+    background-color: rgb(208, 101, 8);
+
+}
+
+.navbar-right a {
+
+    color: aliceblue;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger i {
+    color: rgb(118, 29, 29);
+    margin: 20px;
+    font-size: 30px;
+}
+
+.profile-picture1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-right: 15px;
+    cursor: pointer;
+    
+    
+}
+.profile-picture1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 769px) {
+    .navbar-menu {
+
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        position:fixed;
+        top: 12%;
+        width: 90%;
+        height: 600px;
+        left: -600%;
+        background: rgba(223, 217, 217, 0.611);
+        backdrop-filter: blur(7px);
+        border-radius: 13px;
+        box-shadow: 0 8px 32px 0 rgb(31, 38, 135, .37);
+        padding: 40px 0 0 30px;
+        color: rgb(200, 100, 18);
+        padding: 80px 0 30px 0;
+        margin: 0;
+        z-index: 1;
+        
+
+        
+     
+
+    }
+
+    .navbar-menu.show {
+        left: 6%;
+        transition: 0.3s ease;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger i {
+        color: rgb(1, 1, 1);
+        margin: 20px;
+    }
+
+
+}
+

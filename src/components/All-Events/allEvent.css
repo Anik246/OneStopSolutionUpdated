@@ -1,0 +1,60 @@
+
+.event-main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.event-inner-container{
+    margin-top: 2cm;
+    
+
+}
+.event-title{
+    font-size:x-large;
+    color: #1d1d1f;
+   
+}
+.event-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -23cm;
+    gap: 10px;
+    font-size: large;
+    margin-top: -1cm;
+}
+.location{
+    margin-left: -20.8cm;
+    font-size: large;
+    font-weight: 400;
+    margin-top: -0.8cm;
+}
+.events-line{
+    height: 2vh;
+}
+.events-line hr{ 
+   margin-left: 1.4cm;
+   margin-top: 1cm;
+   width: 74vw;
+   background-color: rgba(0, 0, 0, 0.603);
+}
+.event-photos img{
+    margin-left: 0.2cm;
+    width: 147vh;
+    height: 40vw;
+}
+.event-description{
+    font-size: 20px;
+    width: 74vw;
+    margin-left: 1.2cm;
+    margin-top: 1cm;
+    text-align: start;
+    color:rgba(48, 49, 50, 0.753);
+}
+.hr-line2{
+     margin-top: 2cm;
+     width: 160vh;
+     height: 1px;
+     background-color: rgba(0, 0, 0, 0.603);
+}
